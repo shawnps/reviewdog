@@ -13,7 +13,7 @@ import (
 )
 
 // Reviewdog represents review dog application which parses result of compiler
-// or linter, get diff and filter the results by diff, and report filterd
+// or linter, get diff and filter the results by diff, and report filtered
 // results.
 type Reviewdog struct {
 	toolname string
@@ -52,7 +52,7 @@ type Comment struct {
 }
 
 // CommentService is an interface which posts Comment.
-type CommentService interface {
+ type CommentService interface {
 	Post(context.Context, *Comment) error
 }
 
